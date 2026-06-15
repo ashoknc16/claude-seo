@@ -6,6 +6,33 @@
 
 ---
 
+## 🔄 Refresh Update — 15 June 2026
+
+This section updates the original 2 April 2026 audit with newly indexed signals. Direct crawling remains blocked (site returns **HTTP 403** to automated requests; the audit environment's network policy also does not allowlist the host), so findings below are again derived from Google-indexed snippets and third-party sources and should be verified by the site owner.
+
+### What changed since April
+
+1. **Major new content cluster — Mis-Sold Car / Vehicle Finance.** National Claims has published an extensive blog cluster targeting the 2026 FCA motor finance redress scandal (e.g. "Why Mis-Sold Car Finance Will Be One of 2026's Biggest Financial Scandals", "What is the Time-Limit for Mis-sold Vehicle Finance in the UK?", "Mis-Sold Car Finance Payouts Slashed", "Has Anyone Actually Got Money From Mis-Sold Car Finance?"). This is a timely, high-volume topical-authority play tied to the FCA redress scheme (PCP/HP agreements 2007–2024; FCA final decisions targeted Feb–Mar 2026; complaint-handling pause to 31 May 2026). **Opportunity:** capture surging search demand. **Gap:** the cluster appears blog-led — it needs a canonical pillar/service page and disciplined internal linking to consolidate authority.
+2. **Service lines expanded.** Current positioning spans **personal injury, road traffic accident, clinical negligence, housing disrepair, and mis-sold vehicle finance** — broader than the April snapshot. The "missing service pages" gap (M1) is partially being addressed via blog content rather than dedicated service/pillar pages.
+3. **Trustpilot volume updated:** now **~1,908 reviews (5 stars, 96 review pages)**, up from ~1,900. Update any hard-coded `reviewCount` in schema accordingly.
+
+### New / elevated risks
+
+- **YMYL + FCA financial-promotion compliance (HIGH).** Mis-sold car finance is financial (money) YMYL content. For an FCA-authorised CMC, claims pages and blog posts about expected payouts must be accurate, dated, and carry appropriate risk/fee disclaimers (CMC financial-promotion rules). Avoid unsubstantiated payout figures; cite FCA sources. Several pages make payout claims ("most claims may be under £950", "~£700 per agreement") that must be sourced and kept current.
+- **Sector regulatory context (AWARENESS).** The FCA has publicly opened investigations into motor-finance claims management companies during 2026. No evidence ties National Claims to these specific actions, but the sector is under heightened scrutiny — accuracy, substantiation, and clear fee disclosure on car-finance content are now reputationally and regulatorily material.
+- **Content freshness / decay risk.** Time-sensitive car-finance posts (dated "December 2025", "2026 timelines") need a freshness/update cadence or they will decay and mislead. Add visible "last updated" dates and `dateModified` schema.
+
+### Refreshed priority adds (see Action Plan for detail)
+
+- **H6 — Build a Mis-Sold Car Finance pillar/service page** consolidating the blog cluster (canonical hub, internal links, `FinancialService`/`Service` schema).
+- **H7 — FCA-compliant disclaimers + sourced figures** on all car-finance content.
+- **Update H1 (/llms.txt)** to include car-finance and housing-disrepair pages.
+- **Update M1** — housing disrepair and car finance now confirmed live offerings; prioritise dedicated service pages over blog-only coverage.
+
+> The category scores below are unchanged from the April baseline (still WAF-limited); the refresh adds opportunities and risks rather than re-scoring. Content Quality trends **up** (active, timely publishing) but with a new compliance caveat for the financial cluster.
+
+---
+
 ## ⚠️ Audit Limitation Notice
 
 The site returns **HTTP 403 Forbidden** to all automated crawler requests from datacenter IPs (CDN/WAF protection — likely Cloudflare). This blocked direct HTML fetching for robots.txt, sitemap.xml, and page content analysis. All findings below are derived from:

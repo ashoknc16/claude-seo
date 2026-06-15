@@ -201,14 +201,49 @@ No Win No Fee — customers pay up to 25% (incl. VAT) of recovered amount.
 
 ---
 
+### H6 — Build a Mis-Sold Car Finance Pillar/Service Page (Added 15 Jun 2026)
+**Category:** Content Quality / On-Page SEO  
+**Impact:** Consolidates the existing car-finance blog cluster into a single authoritative hub; captures surging 2026 motor-finance redress search demand; concentrates internal link equity
+
+**Context:** National Claims has published a large blog cluster on mis-sold car/vehicle finance but appears to lack a canonical service/pillar page. Blog-only coverage scatters authority and competes against itself.
+
+**Actions:**
+1. Create `/mis-sold-car-finance-claims/` (or similar) as the canonical pillar page
+2. Target primary keywords: "mis-sold car finance claim", "car finance compensation", "PCP/HP commission claim"
+3. Internally link every car-finance blog post up to this pillar, and from the pillar down to key posts (hub-and-spoke)
+4. Add `Service` or `FinancialService` schema (separate from the personal-injury `LegalService`)
+5. Include: eligibility (PCP/HP 2007–2024), FCA redress-scheme timeline, No Win No Fee fee disclosure, "Start My Claim" CTA
+6. Set canonical to the pillar; ensure blog posts canonical to themselves but link clearly to the hub
+
+**Effort:** 1 day (content + developer)
+
+---
+
+### H7 — FCA-Compliant Disclaimers + Sourced Figures on Car-Finance Content (Added 15 Jun 2026)
+**Category:** Content Quality / E-E-A-T / Compliance  
+**Impact:** Mis-sold car finance is money-YMYL content for an FCA-authorised CMC — accuracy and compliance are ranking-critical AND regulatory-critical. The motor-finance CMC sector is under active FCA scrutiny in 2026.
+
+**Actions:**
+1. Source every payout/eligibility figure to a citable authority (FCA, FOS, court rulings) — no unsubstantiated "£X payout" claims
+2. Add visible "Last updated: [date]" to every time-sensitive post and `dateModified` to Article schema
+3. Add a clear fee disclosure (up to 25% incl. VAT) and risk/no-guarantee disclaimer on car-finance pages, consistent with CMC financial-promotion rules
+4. Add author attribution with relevant credentials (ties to M2) — essential for financial YMYL
+5. Establish a quarterly review cadence to refresh decayed timelines and figures
+
+**Effort:** 4–6 hours initial + ongoing quarterly review
+
+---
+
 ## 🟡 Medium Priority (Fix Within 1 Month)
 
 ### M1 — Add Missing Service Pages
 **Category:** Content Quality  
 **Impact:** Capture long-tail organic traffic for additional claim types
 
+**Update (15 Jun 2026):** Housing disrepair and mis-sold vehicle finance are now confirmed live offerings (currently covered mainly via blog content). Prioritise dedicated service/pillar pages over blog-only coverage — see H6 for the car-finance pillar.
+
 **Missing pages to create (based on services offered):**
-- `/housing-disrepair-claims/`
+- `/housing-disrepair-claims/` ← now an active service line; prioritise
 - `/injury-at-work-claims/`
 - `/slip-trip-fall-claims/`
 - `/birth-injury-claims/`
@@ -396,9 +431,11 @@ Once WAF allows crawl access, run full image alt text audit to ensure all images
 
 ### Week 2 (High Priority Schema + Technical)
 - [ ] Add LegalService schema to all service pages (H2)
-- [ ] Add ReviewAggregation schema (H3)
+- [ ] Add ReviewAggregation schema (H3) — update reviewCount to ~1,908
 - [ ] Fix weak title tags (H4)
 - [ ] Verify robots.txt + sitemap accessibility (H5)
+- [ ] Build mis-sold car finance pillar/service page + internal linking (H6)
+- [ ] Add FCA-compliant disclaimers + sourced figures to car-finance content (H7)
 
 ### Weeks 3–4 (Content + On-Page)
 - [ ] Fix meta descriptions across all pages (M3)
